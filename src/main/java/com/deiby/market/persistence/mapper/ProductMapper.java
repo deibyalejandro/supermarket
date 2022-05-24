@@ -2,6 +2,7 @@ package com.deiby.market.persistence.mapper;
 
 import com.deiby.market.domain.Product;
 import com.deiby.market.persistence.entity.Producto;
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -20,5 +21,9 @@ public interface ProductMapper {
             @Mapping(source = "categoria", target = "category"),
     })
     Product toProduct(Producto producto);
-    List<Product> toProducts(List<Producto> products);
+    List<Product> toProducts(List<Producto> productos);
+
+    @InheritInverseConfiguration
+    @Mapping(target = "codigoBarras", ignore = true)
+    Producto toProducto(Product product);
 }
