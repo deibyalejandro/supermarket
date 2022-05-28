@@ -37,13 +37,17 @@ public class ProductController {
 
     @PostMapping("/save")
     public ResponseEntity<Product> save(@RequestBody Product product) {
-        return productService.save(product)
+        return new ResponseEntity<>(productService.save(product), HttpStatus.CREATED);
 
     }
 
     @DeleteMapping("/delete/{id}")
-    public boolean delete(@PathVariable("id") int productId) {
-        return productService.delete(productId);
+    public ResponseEntity delete(@PathVariable("id") int productId) {
+        if(productService.delete(productId)){
+            return new ResponseEntity(HttpStatus.OK);
+        }else {
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        }
     }
 }
 
