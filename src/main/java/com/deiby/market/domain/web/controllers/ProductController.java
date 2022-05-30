@@ -1,4 +1,4 @@
-package com.deiby.market.domain.web;
+package com.deiby.market.domain.web.controllers;
 
 import com.deiby.market.domain.Product;
 import com.deiby.market.domain.service.ProductService;
