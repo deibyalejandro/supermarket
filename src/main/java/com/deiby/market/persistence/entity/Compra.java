@@ -27,7 +27,6 @@ public class Compra {
     private String estado;
 
     @ManyToOne
-    @MapsId("idCompra")
     @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
     private Cliente cliente;
 

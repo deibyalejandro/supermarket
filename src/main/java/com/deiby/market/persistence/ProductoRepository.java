@@ -22,7 +22,6 @@ public class ProductoRepository implements ProductRepository {
     @Override
     public List<Product> getAll(){
         List<Producto> productos = (List<Producto>) productoCrudRepository.findAll();
-        System.out.println(productos.get(0).getNombre());;
         return mapper.toProducts(productos);
     }
 
@@ -32,8 +31,8 @@ public class ProductoRepository implements ProductRepository {
         return Optional.of(mapper.toProducts(productos));
     }
 
-    public Optional<List<Product>> getByStock (int cantidadStock){
-        Optional<List<Producto>> productos =  productoCrudRepository.findByCantidadStockLessThanAndEstado(cantidadStock, true);
+    public Optional<List<Product>> getByStock (int quantity){
+        Optional<List<Producto>> productos =  productoCrudRepository.findByCantidadStockLessThanAndEstado(quantity, true);
         return productos.map(prods -> mapper.toProducts(prods));
     }
 

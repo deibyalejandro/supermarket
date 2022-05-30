@@ -18,6 +18,7 @@ public class CompraRepository implements PurchaseRepository {
 
     @Autowired
     private PurchaseMapper mapper;
+
     @Override
     public List<Purchase> getAll() {
         return mapper.toPurchases((List<Compra>) compraCrudRepository.findAll());
