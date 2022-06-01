@@ -1,4 +1,4 @@
-package com.deiby.market.domain.web.config;
+package com.deiby.market.web.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

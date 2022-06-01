@@ -1,4 +1,4 @@
-package com.deiby.market.domain.web.controllers;
+package com.deiby.market.web.controller;
 
 import com.deiby.market.domain.Product;
 import com.deiby.market.domain.service.ProductService;
@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")
