@@ -1,4 +1,4 @@
-# deiby-market
+# supermarket
 Software que controla las operaciones de un supermercado a través de una API con Java Spring. 
 
 ![img](https://user-images.githubusercontent.com/60546141/186958222-3ad9fc75-6fab-4338-9f61-0c009f451012.png)
