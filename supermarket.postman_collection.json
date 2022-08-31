@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "17631803-d6c5-4190-bcbc-0c052f9b71ec",
+		"name": "supermarket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10787589"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NTQyOTAwODMsImV4cCI6MTY1NDMyNjA4M30.0qKLRkCZ8QCm678zOyO99uxR2h7l-DYLA_2ua_c43RM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/products/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"products",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/products/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"products",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get products by category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/products/category/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"products",
+						"category",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Lechuga\",\n        \"categoryId\": 1,\n        \"price\": 2000.0,\n        \"stock\": 60,\n        \"active\": true\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/products/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"products",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/products/delete/51",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"products",
+						"delete",
+						"51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all purchases",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/purchases/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"purchases",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get purchases by client",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/purchases/client/4546221",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"purchases",
+						"client",
+						"4546221"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save purchase",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGVqYW5kcm8iLCJpYXQiOjE2NjE1Mjk4NjIsImV4cCI6MTY2MTU2NTg2Mn0.KG5lIPGxq2UKx0ei7_I3P25ElyeW7yjIVEzI5Ydhj-U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"clientId\": \"4546221\",\n        \"date\": \"2000-12-31T13:40:00\",\n        \"paymentMethod\": \"E\",\n        \"comment\": \"\",\n        \"state\": \"P\",\n        \"items\": [\n            {\n                \"productId\": 1,\n                \"quantity\": 10,\n                \"total\": 3000.0,\n                \"active\": true\n            },\n            {\n                \"productId\": 3,\n                \"quantity\": 20,\n                \"total\": 14000.0,\n                \"active\": true\n            }\n        ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/purchases/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"purchases",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"alejandro\",\n    \"password\": \"deiby\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/deiby-market/api/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"deiby-market",
+						"api",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
