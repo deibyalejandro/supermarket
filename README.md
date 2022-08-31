@@ -24,7 +24,7 @@ Abrir el proyecto en intellij IDEA, automaticamente se escanearán las configura
 
 ## Pruebas
 
-Importar la colección de postman adjunta en el pepositorio y hacer los respectivos request para probar las apis
+Importar la colección de postman adjunta en el repositorio y hacer los respectivos request para probar las apis
 
 
 ## Authors ✒️
