@@ -22,6 +22,10 @@ Abrir el proyecto en intellij IDEA, automaticamente se escanearán las configura
 
 ![image](https://user-images.githubusercontent.com/60546141/186960886-3205780f-c21b-4de0-bcf0-bc0de4596d33.png)
 
+## Pruebas
+
+Importar la colección de postman adjunta en el pepositorio y hacer los respectivos request para probar las apis
+
 
 ## Authors ✒️
 
