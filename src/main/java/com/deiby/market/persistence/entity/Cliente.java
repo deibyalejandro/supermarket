@@ -17,6 +17,7 @@ public class Cliente {
     @Column(name="correo_electronico")
     private String correoElectronico;
 
+    //un cliente tiene muchas compras
     @OneToMany(mappedBy = "cliente")
     private List<Compra> compras;
 

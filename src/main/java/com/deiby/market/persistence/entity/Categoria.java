@@ -16,6 +16,7 @@ public class Categoria {
 
     private Boolean estado;
 
+    //Una categoría tiene muchos clientes
     @OneToMany(mappedBy = "categoria")
     private List<Producto> productos;
 
